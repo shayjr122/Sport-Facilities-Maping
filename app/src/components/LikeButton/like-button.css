@@ -1,0 +1,40 @@
+.like {
+  background-color: #00b9e8;
+  color: #00b9e8;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.dislike {
+  background-color: #888;
+  color: #888;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+.like-img {
+  margin: 5%;
+  height: 40px;
+  width: 40px;
+}
+
+/* /* color: #00b9e8; 
+} */
+
+/* .btn:active {
+  background-color: inherit;
+  color: inherit;
+} */
+/* 
+.like-button:hover img {
+  /* Add any specific styles for the image on hover 
+} */

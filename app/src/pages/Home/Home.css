@@ -1,0 +1,141 @@
+/* index.css */
+#root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+/*  */
+.all {
+  display: inline-block !important;
+}
+body {
+  background-color: #00b9e8;
+  height: 100%;
+  width: 100%;
+}
+/* .quart-grid {
+  height: 50%;
+  max-height: 50%;
+} */
+div:has(> .home-main-grid) {
+  height: 100vh;
+  width: 100vw;
+  padding: auto;
+  background-color: #00b9e8;
+  display: flex;
+}
+
+.home-main-grid {
+  width: 95%;
+  height: 93%;
+  margin: auto;
+  padding: 1% 0.5%;
+  background-color: white;
+  border-radius: 20px;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  overflow: auto;
+}
+.logout-btn {
+  width: 150px !important;
+  height: 25px !important;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2em;
+  border: solid white 1px;
+  background-color: #00b9e8;
+  color: white;
+
+  font-size: 15px;
+}
+.half-grid {
+  width: 48.7%;
+  height: 100%;
+}
+.quart-grid-top {
+  height: 72.5%;
+  border-radius: 20px;
+  border: solid black 1px;
+  padding: 2.5%;
+}
+.quart-grid-bottom {
+  height: 26.5%;
+  border-radius: 20px;
+  border: solid black 1px;
+  padding: 2.5%;
+}
+.cheat {
+  height: 1%;
+}
+.center {
+  margin-top: 2%;
+}
+.tableFixHead {
+  overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+  height: 100%; /* gives an initial height of 200px to the table */
+}
+.tableFixHead thead th {
+  position: sticky; /* make the table heads sticky */
+  top: 0px; /* table head will be placed from the top of the table and sticks to it */
+}
+table {
+  border-collapse: collapse; /* make the table borders collapse to each other */
+  width: 100%;
+  font-size: 15px;
+}
+th,
+td {
+  padding: 4px 13px;
+  border: none;
+}
+
+th {
+  background: #eee;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+table,
+tr,
+td {
+  border: none;
+  font-size: 14px;
+  /* background-color: white; */
+}
+.tr-hover:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+.eng {
+  direction: ltr !important;
+}
+@media (max-width: 1020px) {
+  .home-main-grid {
+    display: list-item;
+  }
+  .half-grid {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

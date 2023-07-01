@@ -1,0 +1,41 @@
+div:has(> .leaflet-container) {
+  border: solid black 2px;
+  border-radius: 2rem;
+}
+
+.leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poupline {
+  padding: 1px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.popuppropertiy {
+  width: 60%;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.popupvalue {
+  width: 40%;
+  text-align: right;
+}
+.popuptext {
+  border: solid black 1px;
+  border-radius: 20px;
+  padding: 20px 15px;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  display: inline-block;
+  justify-content: space-between;
+  margin: 10px 0;
+  direction: rtl;
+  text-align: right;
+  margin-bottom: 30px;
+}

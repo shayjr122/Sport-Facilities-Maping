@@ -1,0 +1,198 @@
+/* index.css */
+#root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+body {
+  background-color: #00b9e8;
+  height: 100%;
+  width: 100%;
+}
+
+div:has(> .admin-main-grid) {
+  height: 100vh;
+  width: 100vw;
+  padding: auto;
+  background-color: #00b9e8;
+  display: flex;
+}
+
+.admin-main-grid {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  padding: 1% 0.5%;
+  background-color: white;
+  border-radius: 20px;
+  font-family: "Rubik", sans-serif;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  color: black;
+  overflow: auto;
+}
+.admin-top-grid {
+  width: 100%;
+  height: 20%;
+  padding-top: 3%;
+}
+.admin-below-grid {
+  width: 100%;
+  height: 90%;
+  padding: 1%;
+  border: solid black 1px;
+  border-radius: 20px;
+}
+.after {
+  width: 100%;
+  height: 8%;
+}
+.update-btn {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  background-color: #00b9e8;
+  color: white;
+
+  font-size: 15px;
+}
+.cheat {
+  height: 2%;
+  width: 100%;
+}
+.tableFixHead {
+  overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+  height: 100%; /* gives an initial height of 200px to the table */
+}
+.tableFixHead thead th {
+  position: sticky; /* make the table heads sticky */
+  top: 0px; /* table head will be placed from the top of the table and sticks to it */
+}
+table {
+  border-collapse: collapse; /* make the table borders collapse to each other */
+  width: 100%;
+  font-size: 15px;
+}
+th,
+td {
+  padding: 4px 13px;
+  border: none;
+}
+
+th {
+  background: #eee;
+}
+.img[data-selected="true"] {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+table,
+tr,
+td {
+  border: none;
+  font-size: 14px;
+  /* background-color: white; */
+}
+
+.eng {
+  direction: ltr !important;
+}
+.downArrow {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.logout-btn {
+  width: 10%;
+  height: 30px;
+  margin: 5px;
+  border-radius: 2em;
+  border: solid white 1px;
+  background-color: #00b9e8;
+  color: white;
+  font-size: 15px;
+}
+.downArrow[data-selected="true"] {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+.admin-my-input {
+  border: solid black 1px;
+  border-radius: 20px;
+  padding: 14px 6px;
+  font-family: "Rubik", sans-serif;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  text-align: center;
+}
+.drop-down-lst {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  width: 100%;
+}
+.drop-down-lst > div {
+  display: flex;
+  justify-content: space-between;
+}
+.spinner-lst {
+  list-style: none;
+  z-index: 1;
+  max-height: 200px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: white;
+}
+.spinner-lst::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.spinner-lst > li {
+  padding: 10px 0;
+  cursor: pointer;
+  text-align: left;
+  font-size: 15px;
+}
+.spinner-lst > li:hover {
+  background-color: #a39c9c;
+}
+
+.td-center {
+  padding-top: auto;
+  text-align: center;
+}
+.th-center {
+  text-align: center;
+}
